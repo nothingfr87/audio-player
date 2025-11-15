@@ -56,7 +56,7 @@ sudo make uninstall
 
 ## Issues
 
-if you find any issues you can report at [Issues](https://github.com/peanubutte-r/audio-player)
+if you find any issues you can report at [Issues](https://github.com/nothingfr87/audio-player)
 
 ---
 
