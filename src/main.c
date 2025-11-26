@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
   while ((opt = getopt(argc, argv, "vhf:")) != -1) {
     switch (opt) {
     case 'v':
-      printf("Version 0.1 Alpha\n");
+      printf("Version 0.1.1 Alpha\n");
       return 0;
     case 'h':
       printf("Usage: \n");
