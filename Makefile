@@ -1,13 +1,14 @@
+GCC_ARGUMENTS = -Wall -O2 -Isrc/SDL/include -Isrc/SDL/src -lSDL2 -o 
+
 build:
-	cmake -B build
-	cmake --build build
+	gcc src/main.c $(GCC_ARGUMENTS) atulo
 
 install: build
-	mv build/player /usr/local/bin/player
-	chmod 777 /usr/local/bin/player
+	mv atulo /usr/local/bin/atulo
+	chmod 777 /usr/local/bin/atulo
 
 uninstall:
-	rm -f /usr/local/bin/player
+	rm -f /usr/local/bin/atulo
 
 clean:
-	rm -rf build 
+	rm -f atulo 
