@@ -1,4 +1,4 @@
-GCC_ARGUMENTS = -Wall -O2 -Isrc/SDL/include -Isrc/SDL/src -lSDL2 -o 
+GCC_ARGUMENTS = -Wall -O2 $(shell pkg-config --cflags --libs sdl2) -o 
 
 build:
 	gcc src/main.c $(GCC_ARGUMENTS) atulo
